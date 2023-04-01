@@ -1,5 +1,7 @@
 # run-board
 
+Check Results at https://jinhuaschool.smart-run.cn/h5/student/
+
 Set your id list at `App.vue > data() > idList`
 
 ## Project setup
