@@ -1,6 +1,6 @@
 # 🚀乐跑榜单使用教程
 
-查询个人乐跑数据请[点击此处](https://jinhuaschool.smart-run.cn/h5/student/) 
+查询个人乐跑数据请[点击此处](https://jinhuaschool.smart-run.cn/h5/student/)   
 在线查看乐跑校榜请[点击此处](https://tool.bluemangoo.net/run-board)
 
 ## 1.安装 Node.js
