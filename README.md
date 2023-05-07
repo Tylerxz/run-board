@@ -1,38 +1,39 @@
-# 🚀乐跑榜单使用教程
+# run-board
 
-## 友情链接
+Set your id list at `App.vue > data() > idList`
 
-查询个人乐跑数据请[点击此处](https://jinhuaschool.smart-run.cn/h5/student/)   
-在线查看乐跑校榜请[点击此处](https://tool.bluemangoo.net/run-board)
+## Project setup
+```
+yarn install
+```
 
-## 1.安装 Node.js
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
 
-①前往[此网站](https://nodejs.org/zh-cn/download/)下载安装  
-②打开Node.js，输入 npm install -g yarn  
+### Compiles and minifies for production
+```
+yarn build
+```
 
-## 2.下载源码
+### Lints and fixes files
+```
+yarn lint
+```
 
-①下载此页面源代码并解压  
-②打开cmd，切换到解压的文件目录(D:，cd 文件目录）  
-③输入 yarn install  
- 
-## 3.修改数组
+### Election setup
+```
+MKDIR build
+COPY election.package.json build/package.json
+CD build
+yarn install
+```
 
-①找到 src/app.vue  
-②找到一个很长的数组叫 idList   
-③改成自己班级的乐跑号码(乐跑号码可参考[学生名单](https://github.com/Tylerxz/Name))  
-
-## 4.打包程序
-①输入 yarn serve  
-②在 localhost:8080 确认  
-③输入 yarn build  
-④新建一个文件夹，里面放 main.js 、electron.package.json (重命名为package.json) 和 dist 里面的文件  
-
-## 5.构建程序
-①将cmd切换到新建的文件夹  
-②输入 yarn install  
-③输入 yarn run build  
-④在 dist 文件夹里找到构建的程序  
-
-## 参考：高二4班idlist数组
-idList = [20210203,20210204,20210206,20210208,20210209,20210210,20210212,20210214,20210221,20210223,20210224,20210225,20210231,20210233,20210238,20210306,20210313,20210315,20210322,20210333,20210334,20210336,20210340,20210343,20210403,20210406,20210409,20210410,20210412,20210414,20210415,20210417,20210418,20210419,20210420,20210421,20210423,20210426,20210429,20210440,20210602,20210907,20211102]
+### Election build
+```
+ROBOCOPY dist build /E
+COPY main.js build/main.js
+CD build
+yarn run build
+```
